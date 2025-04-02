@@ -21,4 +21,4 @@ WORKDIR /app
 ENV ASPNETCORE_HTTP_PORTS=3001
 EXPOSE 3001
 COPY --from=publish /app/publish .
-ENTRYPOINT [ "dotnet","learnwithjon.dll" ]
+ENTRYPOINT [ "dotnet","learnwithjon-docker.dll" ]
