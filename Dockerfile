@@ -7,7 +7,7 @@ COPY ["./learnwithjon-docker.csproj" "dockerize-dotnet-1/"]
 RUN dotnet restore 'dockerize-dotnet-1/learnwithjon-docker.csproj'
 
 # Build
-COPY ["." "dockerize-dotnet-1/"]
+COPY [".","dockerize-dotnet-1/"]
 RUN dotnet build 'dockerize-dotnet-1/learnwithjon-docker.csproj' -c Release -o /app/build
 
 # Stage 2 : Publish
