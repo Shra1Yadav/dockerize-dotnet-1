@@ -3,7 +3,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /
 
 # Restore
-COPY ["dockerize-dotnet-1/learnwithjon-docker.csproj" "dockerize-dotnet-1/"]
+COPY ["./learnwithjon-docker.csproj" "dockerize-dotnet-1/"]
 RUN dotnet restore 'dockerize-dotnet-1/learnwithjon-docker.csproj'
 
 # Build
